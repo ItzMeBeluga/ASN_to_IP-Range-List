@@ -4,7 +4,6 @@ This script fetches IP ranges associated with a given Autonomous System Number (
 
 ## Features
 - Fetches IP ranges (netblocks) using an ASN lookup.
-- Automatically handles names with spaces by replacing spaces with underscores.
 - Scans the fetched IP ranges using Nmap.
 - Saves both the netblocks and responding IPs into timestamped text files.
 - Handles errors such as invalid ASN input, missing Nmap, or network issues gracefully.
@@ -92,15 +91,15 @@ Both files are created in the current directory.
 ## Example Output
 ### Netblocks File:
 ```
-202.40.191.0/24
-202.40.192.0/24
+192.168.1.0/24
+192.192.2.0/24
 ```
 
 ### Responding IPs File:
 ```
-202.40.191.241
-202.40.191.249
-202.40.191.253
+192.168.1.1
+192.168.1.2
+192.168.1.3
 ```
 
 ---
